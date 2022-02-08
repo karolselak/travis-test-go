@@ -1,0 +1,7 @@
+language: go
+sudo: required
+script:
+ - go run hello.go
+os: linux
+group: stable
+dist: trusty
