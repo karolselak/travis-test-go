@@ -4,4 +4,4 @@ script:
  - go run hello.go
 os: linux
 group: stable
-dist: trusty
+dist: rhel
