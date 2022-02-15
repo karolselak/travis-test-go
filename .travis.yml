@@ -1,6 +1,6 @@
 language: go
 sudo: required
-go_build_args: 'main.CustomArg=some_random_text'
+go_build_args: "-X main.GitCommit=some_random_text"
 script:
  - echo "${GO_BUILD_ARGS}"
  - go run hello.go
