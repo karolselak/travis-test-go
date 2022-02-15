@@ -1,6 +1,9 @@
 language: go
 sudo: required
+go_import_path: 'test import path'
+go_build_args: 'test build args'
 script:
+ - echo "${GO_IMPORT_PATH} & ${GO_BUILD_ARGS}"
  - go run hello.go
 os: linux
 group: stable
