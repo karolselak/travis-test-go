@@ -1,8 +1,9 @@
 package main
 import "fmt"
+import "rsc.io/quote"
 
 var CustomArg string
 
 func main() {
-    fmt.Printf("Hello world! CustomArg: %s\n", CustomArg)
+    fmt.Printf(quote.Go())
 }
