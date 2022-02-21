@@ -1,8 +1,10 @@
 language: go
 sudo: required
 #go_build_args: "-X main.CustomArg=some_random_text"
+go_import_path: "rsc.io/quote"
 script:
  - go run hello.go
 os: linux
 group: stable
 dist: trusty
+
