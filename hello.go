@@ -1,6 +1,5 @@
 package main
 import "fmt"
-import "rsc.io/quote"
 
 var CustomArg string
 
