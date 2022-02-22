@@ -3,6 +3,7 @@ sudo: required
 gobuild_args: '-ldflags "-X main.CustomArg=some_random_text"'
 go_import_path: "rsc.io/quote"
 script:
+ - echo "$TRAVIS_GOBUILD_ARGS"
  - if [ "$TRAVIS_GO_IMPORT_PATH" != "rsc.io/quote" ]; then echo "Problem with go_import_path" 1>&2; exit 64; fi
  - go run hello.go
 os: linux
