@@ -1,10 +1,9 @@
 language: go
 sudo: required
 #go_build_args: "-X main.CustomArg=some_random_text"
-go_import_path: "rsc.io/quote"
+go_import_path: "rsc.io/quotes"
 script:
- - echo '---!---'
- - echo "$TRAVIS_GO_IMPORT_PATH"
+ - if ["$TRAVIS_GO_IMPORT_PATH" != "rsc.io/quote"]; then echo "Problem with go_import_path" 1>&2; exit 64; fi
  - go run hello.go
 os: linux
 group: stable
