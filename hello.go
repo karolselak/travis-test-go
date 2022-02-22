@@ -4,5 +4,5 @@ import "fmt"
 var CustomArg string
 
 func main() {
-    fmt.Printf(quote.Go())
+    fmt.Println("Hello world!")
 }

@@ -3,6 +3,8 @@ sudo: required
 #go_build_args: "-X main.CustomArg=some_random_text"
 go_import_path: "rsc.io/quote"
 script:
+ - echo '---!---'
+ - echo '$TRAVIS_GO_IMPORT_PATH'
  - go run hello.go
 os: linux
 group: stable
